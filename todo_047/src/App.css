@@ -65,12 +65,13 @@ body{
 }
 
 .btnpage{
-  margin-top:15%;
+  margin-top:10%;
 
 }
 
 #listShow{
-  width:60%;
+  width:50%;
   border: .5px solid rgb(110, 110, 110);
   margin: auto;
+  height: 100px
 }

@@ -1,8 +1,10 @@
-export const ToDoItem = ({id,status,title})=>{
+export const ToDoItem = ({id,status,title,deleteFunc})=>{
 
     return (
-        <div id="listShow">
-               <span> {title} - {status?"Yes":"No"}   </span> 
+        <div >
+               <span> {title} - {status?"Yes":"No"} <button onClick={()=>{
+                   deleteFunc(id)
+               }}>Delete</button>  </span> 
         </div>
     );
 }

@@ -1,29 +1,24 @@
 {
   "todos": [
     {
-      "title": "eggs",
-      "status": false,
-      "id": 1
-    },
-    {
-      "title": "milk",
-      "status": false,
-      "id": 2
-    },
-    {
       "title": "prepare codes",
       "status": false,
       "id": 3
     },
     {
-      "title": "assignments",
-      "status": false,
-      "id": 4
-    },
-    {
       "title": "portfolio prep",
       "status": false,
       "id": 5
+    },
+    {
+      "title": "eggs",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "milk",
+      "status": false,
+      "id": 7
     }
   ]
 }

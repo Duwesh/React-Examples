@@ -29,6 +29,25 @@ export const ToDo = ()=>{
 })
 }
 
+
+const deleteFunc = (id)=>{
+    fetch(`http://localhost:3002/todos/${id}`, {
+        method: 'DELETE', 
+        headers: {
+                 'Content-Type': 'application/json',
+                 },
+        // body: JSON.stringify({
+        //     title: data,
+        //     status: false,
+        // }),
+})
+.then(response => response.json())
+.then(data => {
+console.log('Success:', data);
+getData();
+})
+}
+
 const getData = ()=>{
     fetch(`http://localhost:3002/todos?_page=${page}&_limit=2`)
   .then(response => response.json())
@@ -40,9 +59,14 @@ const getData = ()=>{
 
         <ToDoInput setDatafunc={setDatafunc}/>
         <h2>List of ToDo's</h2>
+        <div id="listShow">   
+
         {data.map((e)=>{
-            return  <ToDoItem key={e.id} id={e.id} title={e.title} status={e.status}/>
+            return  <ToDoItem key={e.id} id={e.id} title={e.title} status={e.status} deleteFunc={deleteFunc}/>
         })}
+
+        </div>
+       
        
         <button disabled ={page==1} className="btnpage" onClick={()=>{
             setPage(page-1);
