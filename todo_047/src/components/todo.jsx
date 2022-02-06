@@ -11,14 +11,15 @@ export const ToDo = ()=>{
         getData();
     },[page])
 
-    const setDatafunc = (data)=>{
+    const setDatafunc = (title,text)=>{
         fetch('http://localhost:3002/todos', {
             method: 'POST', 
             headers: {
                      'Content-Type': 'application/json',
                      },
             body: JSON.stringify({
-                title: data,
+                title: title,
+                task:text,
                 status: false,
             }),
 })
@@ -59,18 +60,19 @@ const getData = ()=>{
 
         <ToDoInput setDatafunc={setDatafunc}/>
         <h2>List of ToDo's</h2>
-        <div id="listShow">   
+
+        <div >   
 
         {data.map((e)=>{
-            return  <ToDoItem key={e.id} id={e.id} title={e.title} status={e.status} deleteFunc={deleteFunc}/>
+            return  <ToDoItem key={e.id} id={e.id} task={e.task} title={e.title} status={e.status} deleteFunc={deleteFunc}/>
         })}
 
         </div>
        
        
-        <button disabled ={page==1} className="btnpage" onClick={()=>{
+        <button disabled ={page==1} className="prev" onClick={()=>{
             setPage(page-1);
-        }}>PREV</button>
+        }}>Prev</button>
 
         <button className="btnpage" onClick={()=>{
             setPage(page+1);

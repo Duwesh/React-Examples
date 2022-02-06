@@ -55,21 +55,22 @@ body{
 
 }
 
-.btn,.btnpage{
+.addBtn,.btnpage,.prev{
   width: 70px;
   height: 36px;
   font-size: 15px;
   margin-left: 2px;
   background-color:rgb(250, 115, 65);
+  color:rgb(255, 255, 255);
   border:none
 }
 
-.btnpage{
+.btnpage,.prev{
   margin-top:10%;
 
 }
 
-#listShow{
+.todoItem {
   width:45%;
   border: .5px solid rgb(110, 110, 110);
   margin: auto;

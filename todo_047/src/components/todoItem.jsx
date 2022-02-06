@@ -1,8 +1,8 @@
-export const ToDoItem = ({id,status,title,deleteFunc})=>{
+export const ToDoItem = ({id,status,task,title,deleteFunc})=>{
 
     return (
-        <div >
-               <span> {title} - {status?"Yes":"No"} <button onClick={()=>{
+        <div className="todoItem" >
+               <span> {title} - {task} - {status?"Yes":"No"} <button onClick={()=>{
                    deleteFunc(id)
                }}>Delete</button>  </span> 
         </div>

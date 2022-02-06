@@ -1,17 +1,24 @@
 import {useState,useEffect} from "react";
 
 export const ToDoInput = ({setDatafunc})=>{
-   const [text,setText] = useState("")
+   const [text,setText] = useState("");
+   const [title,setTitle] = useState("");
     return (
         <div>
-            <input  className="todoinput" type="text" placeholder="Enter what to DO....." onChange={
+            <input className="inputTitle" value={title} type="text" onChange={
+                (e)=>{
+                    setTitle(e.target.value);
+                }
+            }/>
+            <input className="inputBody"  type="text" placeholder="Add Task..." onChange={
                 (e)=>{
                     setText(e.target.value);
                 }
             }/>
-            <button className="btn" onClick={()=>{
-                        setDatafunc(text)
-            } }>ADD</button>
+            <button className="addBtn" onClick={()=>{
+                console.log(text);
+                        setDatafunc(title,text)
+            } }>Add</button>
         </div>
     );
 }

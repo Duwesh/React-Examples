@@ -5,7 +5,7 @@ import {ToDo} from './components/todo'
 function App() {
   return (
     <div className="App">
-      <h1 className="title"> ToDO Assignment </h1>
+      <h1 className="title"> Todo...</h1>
       <ToDo/>
     </div>
   );
