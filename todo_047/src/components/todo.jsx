@@ -61,7 +61,7 @@ const getData = ()=>{
         <ToDoInput setDatafunc={setDatafunc}/>
         <h2>List of ToDo's</h2>
 
-        <div >   
+        <div className="todoItem">   
 
         {data.map((e)=>{
             return  <ToDoItem key={e.id} id={e.id} task={e.task} title={e.title} status={e.status} deleteFunc={deleteFunc}/>

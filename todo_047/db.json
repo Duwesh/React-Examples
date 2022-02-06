@@ -1,19 +1,16 @@
 {
   "todos": [
     {
-      "title": "prepare codes",
+      "title": "Buy",
+      "task": "Eggs",
       "status": false,
-      "id": 3
+      "id": 1
     },
     {
-      "title": "eggs",
+      "title": "prepare",
+      "task": "codes",
       "status": false,
-      "id": 6
-    },
-    {
-      "title": "milk",
-      "status": false,
-      "id": 7
+      "id": 2
     }
   ]
 }
