@@ -1,0 +1,29 @@
+{
+    "todos": [
+      {
+        "title": "IM preparation",
+        "status": false,
+        "id": 1
+      },
+      {
+        "title": "context API assignment",
+        "status": false,
+        "id": 2
+      },
+      {
+        "title": "react-redux assignment",
+        "status": false,
+        "id": 3
+      },
+      {
+        "title": "todays assignment",
+        "status": false,
+        "id": 4
+      },
+      {
+        "title": "contest of graphs",
+        "status": false,
+        "id": 5
+      }
+    ]
+  }
