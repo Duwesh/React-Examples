@@ -1,6 +1,6 @@
 import {useSelector,useDispatch} from "react-redux"
 
-import {addTodo, addTodoLoading,addTodoSuccess,getTodoLoading,getTodoSuccess} from "../redux/action"
+import {addTodo, addTodoLoading,addTodoSuccess,getTodoLoading,getTodoSuccess} from "../redux/Todos-redux/action"
 
 import {useState,useEffect} from "react"
 
