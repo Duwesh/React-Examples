@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const DeleteBtn = styled.button`
+export const EditBtn = styled.button`
         border: none;
         font-size : 20px;
         background-color: transparent;
